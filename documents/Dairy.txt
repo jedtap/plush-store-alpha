@@ -1,0 +1,91 @@
+Dairy of Development
+
+Aug 02, 2022
+  - Spent 2.5 hours today.
+  - Written down what to build and what PM documents to use.
+  - Completed dummy Project Request Form
+
+Aug 03, 2022
+  - Spent 2 hours today.
+  - Completed the light versions of selected pre-development documents (from document 01 to 05)
+
+Aug 05, 2022
+  - Spent 1.5 hours today.
+  - Setup new app with proper installation of webpacker and boostrap.
+  - Pass all front end assets from the mini project.
+  - Created the scaffold for the products
+
+Aug 07, 2022
+  - Spent 3 hours today.
+  - Main data is now coming from Rails instead of Javascript.
+  - Fixed cart drawer, added photo in home page, and added a no match page.
+  - Viewing of a specific plush gets data from Rails
+
+Aug 08, 2022
+  - Spent 1hr and 30mins today
+  - Fulfill the interface of the show plushie + add hover animation to images in the shop
+  - gave add to cart functionality to view plush, refactor so that add to cart can handle qty
+
+Aug 09, 2022
+  - Spent 2 hours and 15 mins today
+  - 'Add to cart' and 'Buy' functionalities are added for the individual product page 
+  - Built checkout page's display data and styling
+
+Aug 10, 2022
+  - Spent 1.5 hours today
+  - Added HandleSubmit and HandleChange functionalities
+  - created a scaffold for buyers
+  - Next: fix bug in HandleChange, test submission, include foreign key for what the user ordered
+
+Aug 12, 2022
+  - Spent 1.5 hours today
+  - Fixed HandleChange function bug
+  - Reviewed how to modify an existing schema
+  - Next: Plan out new columns in the scheme - delivery status, foreign keys; model associations; redirections
+
+Aug 13, 2022
+  - Spent 5 hours today
+  - Added orders table with associations
+  - Saved code for redirections
+  - Buyer and order data are saved upon clicking the 'Confirm Order' button
+  - Created first weekly progress report
+
+Aug 14, 2022
+  - Spent 1 hour today
+  - Improved the NoMatch page
+  - Added redirections for both passed and failed scenarios
+  - Next: Subscriber list with mock email notif
+
+Aug 15, 2022
+  - Spent 1.5 hour today
+  - Added a Subscriber sign-up feature with redirections
+  - Next: Mock an email notif upon subscription (requires review and training) then search bar
+
+Aug 16, 2022
+  - Spent 2 hours today
+  - Reviewed and added mock emails when a subscriber gets added
+  - Next: Study and fix async related submissions. Then, search bar
+  - Wish List: Buyers have an option to check a box if they like to be a subscriber too
+
+Aug 17, 2022
+  - Spent 3 hours today
+  - Reviewed means to handle asynchronous functions
+  - Website now submits all text being input by the user
+  - Next: Fix Checkout data cleaning, Fix redirection, then have a search bar
+  - Wish List: Buyers have an option to check a box if they like to be a subscriber too, hyperlink product name to show item
+
+Aug 18, 2022
+  - Spent 2 hours today
+  - Successful orders redirects the user to the success page. Success page auto-redirects after 10 seconds
+  - Search bar in the shop page works good
+  - Wish List: Buyers have an option to check a box if they like to be a subscriber too; hyperlink product name to show item; remove 'key' errors in the console; remove outdated react router dom notice; home page photo does not block navbar buttons (z index); 
+
+Aug 19, 2022
+  - Spent 1 hour today
+  - Buyers have an option to check a box if they like to be a subscriber too
+  - Clicking on a product name now redirects to show details of the certain product
+  - Remove some 'key' errors in the console
+  - Home page photo does not block navbar buttons
+
+Aug 20, 2022
+  - Submitted final progress report
