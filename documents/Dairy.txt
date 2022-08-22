@@ -87,5 +87,13 @@ Aug 19, 2022
   - Remove some 'key' errors in the console
   - Home page photo does not block navbar buttons
 
-Aug 20, 2022
-  - Submitted final progress report
+Aug 20 to 21, 2022
+  - Spent a total of 12 hours of learning how to deploy the app in the Heroku server
+  - Discovery: there are challenges in deployment due to the frontend unable to send data to the backend
+  - For the capstone project, token verification was skipped
+
+Aug 22, 2022
+  - Spent 3 hours today.
+  - Created a new repository and copy-paste all data 
+  - Created a Weekly progress report
+  - Next: Create an image handler javascript + continue to debug copy-paste app
