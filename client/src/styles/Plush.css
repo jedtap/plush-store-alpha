@@ -1,0 +1,43 @@
+.plush-area {
+  max-width: 1240px;
+  margin: 0;
+
+  padding-top: 50px;
+
+  display: grid;
+  grid-template-columns: 50% auto;
+  gap: 10px;
+}
+
+.plush-image {
+  max-width: 350px;
+  height: auto;
+  justify-self: end;
+  padding-right: 77px;
+}
+
+
+.plush-data {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.plush-line-break {
+  width: 80%;
+  border-top: 1px solid rgb(48, 48, 48);
+}
+
+.form-wrapper{
+  width: 20%;
+
+}
+
+.plush-call-to-action {
+  width: 80%;
+  padding-top: 10px;
+
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 10px;
+}

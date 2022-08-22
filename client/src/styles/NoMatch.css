@@ -1,0 +1,12 @@
+.no-match {
+  padding-top: 10vh;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pikachu-dizzy {
+  width: 200px;
+  height: auto;
+}

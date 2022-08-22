@@ -1,0 +1,49 @@
+.checkout-area {
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 20px;
+  margin-bottom: 70px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+
+.checkout-items {
+  width: 80%;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.checkout-grand-total {
+  width: 80%;
+  padding: 18px 10px 10px 10px;
+  border: 2px solid rgb(255, 190, 190);
+
+  align-self: center;
+}
+
+.shipping-details-header {
+  padding-top: 15px;
+}
+
+.checkout-form {
+  width: 80%;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

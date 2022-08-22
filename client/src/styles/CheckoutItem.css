@@ -1,0 +1,17 @@
+.checkout-item {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid rgb(255, 190, 190);
+
+  display: grid;
+  grid-template-columns: 40% auto;
+}
+
+.checkout-item-image {
+  height: 100px;
+  width: auto;
+  padding-right: 10px;
+
+  align-self: center;
+  justify-self: center;
+}
