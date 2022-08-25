@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.46af3704.css",
+    "main.js": "/static/js/main.083ee6ef.js",
+    "static/media/eevee.jpg": "/static/media/eevee.6e47f215ed3a0b711aca.jpg",
+    "static/media/store.jpg": "/static/media/store.872186e686dbcada58cb.jpg",
+    "static/media/ditto-dragonite.jpg": "/static/media/ditto-dragonite.7849d56d30d37ab58d08.jpg",
+    "static/media/pikachu.jpg": "/static/media/pikachu.89a25e10154dbce90e68.jpg",
+    "static/media/ditto-lapras.jpg": "/static/media/ditto-lapras.f3044e2f36fa04839fca.jpg",
+    "static/media/dizzy-pikachu.jpg": "/static/media/dizzy-pikachu.8b2d96f9a361ce1b346c.jpg",
+    "static/media/snorlax.jpg": "/static/media/snorlax.9958c08951167c975678.jpg",
+    "static/media/pikachu-welcome.png": "/static/media/pikachu-welcome.fc56b8eeac967681ecc0.png",
+    "static/media/growlithe.jpg": "/static/media/growlithe.5aae586c5a4f0afad03e.jpg",
+    "static/media/ditto-gengar.jpg": "/static/media/ditto-gengar.b46222f1936592d8a11c.jpg",
+    "static/media/squirtle.jpg": "/static/media/squirtle.98a46763ead2af5285fa.jpg",
+    "static/media/pikachu-kanazawa.jpg": "/static/media/pikachu-kanazawa.ce4cc0404ff2d9480f3e.jpg",
+    "static/media/charmander.jpg": "/static/media/charmander.c039d481f6ff7b001640.jpg",
+    "static/media/bulbasaur.jpg": "/static/media/bulbasaur.4301895599718a102532.jpg",
+    "static/media/thumbs-up.png": "/static/media/thumbs-up.d2e4dffbcc5c041c5a78.png",
+    "index.html": "/index.html",
+    "main.46af3704.css.map": "/static/css/main.46af3704.css.map",
+    "main.083ee6ef.js.map": "/static/js/main.083ee6ef.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.46af3704.css",
+    "static/js/main.083ee6ef.js"
+  ]
+}

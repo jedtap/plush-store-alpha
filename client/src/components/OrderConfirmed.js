@@ -1,6 +1,7 @@
 import React from 'react';
 import Images from './Images';
 import { useEffect } from 'react';
+import '../styles/OrderConfirmed.css';
 
 const OrderConfirmed = () => {
 

@@ -1,5 +1,3 @@
-// import logo from '../images/logo.svg';
-
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -113,7 +111,7 @@ function App() {
     window.localStorage.setItem("storedPlushcode", JSON.stringify(plushcode));
     window.localStorage.setItem("storedPlushdata", JSON.stringify(plushdata));
     window.localStorage.setItem("storedGrandtotal", JSON.stringify(grandtotal));
-  },[itemCount, cartItems, plushcode, plushdata]);
+  },[itemCount, cartItems, plushcode, plushdata, grandtotal]);
 
   useEffect(()=>{
     axios.get('/products.json')
@@ -135,9 +133,9 @@ function App() {
           <input className='form-control plushie-search' placeholder='Find a plushie!' onChange={(e) => {setTerm(e.target.value)}}/>
           <br/>
           <div className="shop-gallery"> {database.filter((val)=>{
-            if (term == ""){
+            if (term === ""){
               return val
-            } else if (val.name.toLowerCase().includes(term.toLowerCase())) {
+            } else if (val.name.toString().toLowerCase().includes(term.toString().toLowerCase())) {
               return val
             }
           }).map((item, key) => <Shop item={item} addToCart={addToCart} setPlushcode={setPlushcode} key={key}/> )} </div>

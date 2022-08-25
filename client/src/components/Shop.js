@@ -1,6 +1,7 @@
 import React from 'react';
 import Images from './Images';
 import { Link } from "react-router-dom";
+import '../styles/Shop.css';
 
 const Shop = ({ item, addToCart, setPlushcode, key }) => {
   return (<>

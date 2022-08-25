@@ -2,6 +2,7 @@ import React from "react";
 import Images from './Images';
 import { useState, useEffect } from 'react';
 import axios from "axios";
+import '../styles/Newsletter.css';
 
 const Newsletter = ({ toggleWelcome, toggleNewsletter }) => {
   const [nicknameData, setNicknameData] = useState('');
@@ -15,8 +16,8 @@ const Newsletter = ({ toggleWelcome, toggleNewsletter }) => {
   const handleSubmitNewsletter = (e) => {
     e.preventDefault();
 
-    const csrfToken2 = document.querySelector('[name=csrf-token').content
-    axios.defaults.headers.common['X-CSRF-TOKEN'] = csrfToken2
+    // const csrfToken2 = document.querySelector('[name=csrf-token').content
+    // axios.defaults.headers.common['X-CSRF-TOKEN'] = csrfToken2
 
     axios.post('/subscribers', {nickname: nicknameData, email: emailData2 }) // Add the subscriber
     .then(() => {

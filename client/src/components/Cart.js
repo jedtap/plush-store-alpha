@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import '../styles/Cart.css';
 
 const Cart = ({ closeCart, itemCount, cartItems, lessItem, moreItem, removeItem }) => {
 

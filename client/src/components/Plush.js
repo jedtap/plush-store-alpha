@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect } from 'react';
 import axios from 'axios';
 import Images from './Images';
+import '../styles/Plush.css';
 
 
 const Plush = ({ plushcode, plushdata, setPlushdata, addToCart, toggleCart }) => {

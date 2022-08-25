@@ -1,6 +1,7 @@
 import React from 'react';
 import Images from './Images';
 import { useNavigate } from "react-router-dom";
+import '../styles/WelcomeSubscriber.css';
 
 
 const OrderConfirmed = ({ toggleWelcome }) => {

@@ -1,6 +1,8 @@
 import React from "react";
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import '../styles/Checkout.css';
+
 
 import CheckoutItem from './CheckoutItem';
 
@@ -26,8 +28,8 @@ const Checkout = ({ cartItems, grandtotal, setGrandtotal, setCartItems, setItemC
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const csrfToken = document.querySelector('[name=csrf-token').content;
-    axios.defaults.headers.common['X-CSRF-TOKEN'] = csrfToken;
+    // const csrfToken = document.querySelector('[name=csrf-token').content;
+    // axios.defaults.headers.common['X-CSRF-TOKEN'] = csrfToken;
 
     if (check === 'checked') {
       axios.post('/subscribers', {nickname: nameData, email: emailData }) // Add the subscriber
@@ -39,16 +41,16 @@ const Checkout = ({ cartItems, grandtotal, setGrandtotal, setCartItems, setItemC
 
       axios.get('/last_buyer.json') // Get ID of the newly added buyer
       .then(data => {
-        cartItems.map((order)=>{ 
+        cartItems.map((order) => {           
           let pushOrder = {quantity: order.quantity, price: order.price, subtotal: order.quantity * order.price, buyer_id: data.data.data, product_id: order.id };
           axios.post('/orders', pushOrder) // Add the buyer
-          .then(() => { // Clean up
-            window.location = "/order-success";
+          .then(()=>{ // clean-up
             setCartItems([]);
             setItemCount(0);
             setPlushcode(0);
             setPlushdata([]);
             setGrandtotal(0);
+            window.location = "/order-success"; 
           })
           .catch( () => { window.location = "/failed-order-push" })
         });
