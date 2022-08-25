@@ -97,3 +97,9 @@ Aug 22, 2022
   - Created a new repository and copy-paste all data 
   - Created a Weekly progress report
   - Next: Create an image handler javascript + continue to debug copy-paste app
+
+Aug 25, 2022
+  - Spent 1.5 hours today
+  - Revised image handler javascript
+  - Debugged dev environment setup
+  - Next: Refactor the windows.location to redirects in reactjs

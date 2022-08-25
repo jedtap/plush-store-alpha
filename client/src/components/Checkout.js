@@ -44,16 +44,23 @@ const Checkout = ({ cartItems, grandtotal, setGrandtotal, setCartItems, setItemC
         cartItems.map((order) => {           
           let pushOrder = {quantity: order.quantity, price: order.price, subtotal: order.quantity * order.price, buyer_id: data.data.data, product_id: order.id };
           axios.post('/orders', pushOrder) // Add the buyer
-          .then(()=>{ // clean-up
-            setCartItems([]);
-            setItemCount(0);
-            setPlushcode(0);
-            setPlushdata([]);
-            setGrandtotal(0);
-            window.location = "/order-success"; 
-          })
-          .catch( () => { window.location = "/failed-order-push" })
+          // .then(()=>{ // clean-up
+          //   window.location = "/order-success"; 
+          //   setCartItems([]);
+          //   setItemCount(0);
+          //   setPlushcode(0);
+          //   setPlushdata([]);
+          //   setGrandtotal(0);
+          // })
+          .catch( () => { window.location = "/failed-order-push" });
+          return null;
         });
+        window.location = "/order-success"; 
+        setCartItems([]);
+        setItemCount(0);
+        setPlushcode(0);
+        setPlushdata([]);
+        setGrandtotal(0);
       })
       .catch( () => { window.location = "/failed-getting-last-buyer" }))
     .catch( () => { window.location = "/failed-saving-shipping-details" })
