@@ -34,36 +34,36 @@ const Checkout = ({ cartItems, grandtotal, setGrandtotal, setCartItems, setItemC
     if (check === 'checked') {
       axios.post('/subscribers', {nickname: nameData, email: emailData }) // Add the subscriber
       .catch( () => { window.location = "/failed-saving-subscriber" })
-    }
+    };
 
     axios.post('/buyers', {name: nameData, address: addressData, email: emailData, cellphone: cellphoneData, payment: paymentData }) // Add the buyer
-    .then(
+    .then(()=>{
 
       axios.get('/last_buyer.json') // Get ID of the newly added buyer
-      .then(data => {
-        cartItems.map((order) => {           
-          let pushOrder = {quantity: order.quantity, price: order.price, subtotal: order.quantity * order.price, buyer_id: data.data.data, product_id: order.id };
-          axios.post('/orders', pushOrder) // Add the buyer
-          // .then(()=>{ // clean-up
-          //   window.location = "/order-success"; 
-          //   setCartItems([]);
-          //   setItemCount(0);
-          //   setPlushcode(0);
-          //   setPlushdata([]);
-          //   setGrandtotal(0);
-          // })
-          .catch( () => { window.location = "/failed-order-push" });
-          return null;
-        });
-        window.location = "/order-success"; 
-        setCartItems([]);
-        setItemCount(0);
-        setPlushcode(0);
-        setPlushdata([]);
-        setGrandtotal(0);
+      .then((data)=>{
+        console.log(data);
+        debugger;
       })
-      .catch( () => { window.location = "/failed-getting-last-buyer" }))
-    .catch( () => { window.location = "/failed-saving-shipping-details" })
+      .catch(()=>{ window.location = "/failed-getting-last-buyer" });
+
+    })
+    .catch(()=>{ window.location = "/failed-saving-shipping-details" });
+
+    // .then(data => {
+    //   cartItems.map((order) => {       // check push order data below     
+    //     let pushOrder = {quantity: order.quantity, price: order.price, subtotal: order.quantity * order.price, buyer_id: data.data.data, product_id: order.id };
+    //     axios.post('/orders', pushOrder) // Add the buyer
+    //     .then(()=>{ // clean-up
+    //       window.location = "/order-success"; 
+    //       setCartItems([]);
+    //       setItemCount(0);
+    //       setPlushcode(0);
+    //       setPlushdata([]);
+    //       setGrandtotal(0);
+    //     })
+    //     .catch( () => { window.location = "/failed-order-push" });
+    //   });
+    // })
   }
 
   return(<>

@@ -24,10 +24,10 @@ class BuyersController < ApplicationController
     @buyer = Buyer.new(buyer_params)
 
     respond_to do |format|
-      unless @buyer.save
-        # format.html { redirect_to buyer_url(@buyer), notice: "Buyer was successfully created." }
-        # format.json { render :show, status: :created, location: @buyer }
-      # else
+      if @buyer.save
+        format.html { redirect_to buyer_url(@buyer), notice: "Buyer was successfully created." }
+        format.json { render :show, status: :created, location: @buyer }
+      else
         format.html { render :new, status: :unprocessable_entity }
         format.json { render json: @buyer.errors, status: :unprocessable_entity }
       end
