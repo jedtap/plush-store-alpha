@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.46af3704.css",
-    "main.js": "/static/js/main.c59e46b3.js",
+    "main.js": "/static/js/main.7b108866.js",
     "static/media/eevee.jpg": "/static/media/eevee.6e47f215ed3a0b711aca.jpg",
     "static/media/store.jpg": "/static/media/store.872186e686dbcada58cb.jpg",
     "static/media/ditto-dragonite.jpg": "/static/media/ditto-dragonite.7849d56d30d37ab58d08.jpg",
@@ -19,10 +19,10 @@
     "static/media/thumbs-up.png": "/static/media/thumbs-up.d2e4dffbcc5c041c5a78.png",
     "index.html": "/index.html",
     "main.46af3704.css.map": "/static/css/main.46af3704.css.map",
-    "main.c59e46b3.js.map": "/static/js/main.c59e46b3.js.map"
+    "main.7b108866.js.map": "/static/js/main.7b108866.js.map"
   },
   "entrypoints": [
     "static/css/main.46af3704.css",
-    "static/js/main.c59e46b3.js"
+    "static/js/main.7b108866.js"
   ]
 }
