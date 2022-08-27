@@ -2,8 +2,7 @@
 
 Hi there! This is a capstone project for The Odin Project curriculum.
 
-Check out the application here! 👇
-https://plush-shop.herokuapp.com/
+Check out the application here! 👉 https://plush-shop.herokuapp.com/
 
 ## What makes this capstone project unique?
 
