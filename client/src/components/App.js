@@ -140,10 +140,10 @@ function App() {
             }
           }).map((item, key) => <Shop item={item} addToCart={addToCart} setPlushcode={setPlushcode} key={key}/> )} </div>
         </>} />
-        <Route path='*' element={<NoMatch/>} />
         <Route path='/shop/:id' element={<Plush plushcode={plushcode} plushdata={plushdata} setPlushdata={setPlushdata} addToCart={addToCart} toggleCart={toggleCart} />} />
         <Route path='/checkout' element={<Checkout cartItems={cartItems} grandtotal={grandtotal} setGrandtotal={setGrandtotal} setCartItems={setCartItems} setItemCount={setItemCount} setPlushcode={setPlushcode} setPlushdata={setPlushdata} />} />
         <Route path='/order-success' element={ <OrderConfirmed />} />
+        <Route path='*' element={<NoMatch/>} />
       </Routes>
       <Cart closeCart={toggleCart} itemCount={itemCount} cartItems={cartItems} lessItem={lessItem} moreItem={moreItem} removeItem={removeItem} />
       <Newsletter toggleWelcome={toggleWelcome} toggleNewsletter={toggleNewsletter} />
