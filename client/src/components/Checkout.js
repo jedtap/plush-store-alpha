@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import '../styles/Checkout.css';
 
@@ -13,6 +14,7 @@ const Checkout = ({ cartItems, grandtotal, setGrandtotal, setCartItems, setItemC
   const [cellphoneData, setCellphoneData] = useState('');
   const [paymentData, setPaymentData] = useState('');
   const [check, setCheck] = useState('');
+  const nav = useNavigate();
 
   useEffect(()=>{
     let total = 0;
@@ -55,7 +57,7 @@ const Checkout = ({ cartItems, grandtotal, setGrandtotal, setCartItems, setItemC
         setPlushcode(0);
         setPlushdata([]);
         setGrandtotal(0);
-        window.location = "/order-success"; 
+        nav("/order-success"); 
       })
       .catch(()=>{ window.location = "/failed-getting-last-buyer" });
 
