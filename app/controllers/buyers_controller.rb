@@ -58,7 +58,7 @@ class BuyersController < ApplicationController
   end
 
   def last_buyer
-    @last_buyer = Buyer.last.id + 1
+    @last_buyer = Buyer.last.id 
     render json: { data: @last_buyer }
   end
 
