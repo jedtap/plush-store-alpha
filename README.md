@@ -1,24 +1,14 @@
-# README
+# Plushie Store!
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Hi there! This is a capstone project for The Odin Project curriculum.
 
-Things you may want to cover:
+Check out the application here! 👇
+https://plush-shop.herokuapp.com/
 
-* Ruby version
+## What makes this capstone project unique?
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Fun Pokémon themed design!
+- Built within 54 hours by a part-timer!
+- Has a developer's dairy located at `Documents > Dairy.txt`
+- With sample Project Management (PM) documents found in the `Documents` folder
+- Editable PM documents are found in the `Documents > Editable` folder

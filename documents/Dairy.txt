@@ -108,4 +108,9 @@ Aug 26, 2022
   - Spent 1.5 hours today
   - Attempt to fix order workflow
   - Next: Refactor order workflow bit by bit, revise windows.location redirects, then push to heroku
- 
+
+Aug 27, 2022
+  - Spent 5 hours today.
+  - Successfully deployed the application in Heroku
+  - Completed closing documents
+  - Try the application at https://plush-shop.herokuapp.com/
