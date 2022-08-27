@@ -124,7 +124,7 @@ function App() {
   }, [])
 
   return (<>
-   <BrowserRouter> {/*basename={process.env.PUBLIC_URL} */}
+   <BrowserRouter>
       <NavBar openCart={toggleCart} itemCount={itemCount} toggleNewsletter={toggleNewsletter} />
       <Routes>
         <Route path='/' element={<Home />} />
@@ -150,11 +150,6 @@ function App() {
       <WelcomeSubscriber toggleWelcome={toggleWelcome} />
     </BrowserRouter >
   </>);
-
-  // return (<>
-  //   <img src={logo} className="App-logo" alt="logo" />
-  //   <Hehe />
-  // </>);
 }
 
 export default App;

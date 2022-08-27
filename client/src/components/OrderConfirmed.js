@@ -1,13 +1,15 @@
 import React from 'react';
 import Images from './Images';
 import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../styles/OrderConfirmed.css';
 
 const OrderConfirmed = () => {
+  const nav = useNavigate();
 
   useEffect(() => {
     setTimeout(() => {
-      window.location = "/shop";
+      nav("/shop");
     }, 10000);
   }, [])
 
@@ -17,7 +19,7 @@ const OrderConfirmed = () => {
         <img src={Images[13].img} alt='Pikachu giving a thumbs up' className='pikachu-thumbs-up' />
         <br/>
         <h3>Order successful!</h3>
-        <div className='btn btn-danger' onClick={()=>{ window.location = "/shop" }}>Checkout More Plushies!</div>
+        <div className='btn btn-danger' onClick={()=>{ nav("/shop") }}>Checkout More Plushies!</div>
       </div>
     </div>
   </>)

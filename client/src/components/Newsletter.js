@@ -1,12 +1,14 @@
 import React from "react";
 import Images from './Images';
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import axios from "axios";
 import '../styles/Newsletter.css';
 
 const Newsletter = ({ toggleWelcome, toggleNewsletter }) => {
   const [nicknameData, setNicknameData] = useState('');
   const [emailData2, setEmailData2] = useState('');
+  const nav = useNavigate();
 
   useEffect(()=>{
     let dummy = 0;
@@ -26,7 +28,7 @@ const Newsletter = ({ toggleWelcome, toggleNewsletter }) => {
       setEmailData2('');
       toggleNewsletter();
     })
-    .catch( () => { window.location = "/failed-saving-subscriber" })
+    .catch( () => { nav("/failed-saving-subscriber") })
   }
 
   return(<>
