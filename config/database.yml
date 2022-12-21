@@ -84,3 +84,4 @@ production:
   database: plush_store_alpha_production
   username: plush_store_alpha
   password: <%= ENV["PLUSH_STORE_ALPHA_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
