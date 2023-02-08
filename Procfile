@@ -1,1 +1,1 @@
-web: rails db:create && rails db:migrate && rails db:seed && rails s -b 0.0.0.0 -p $PORT
+web: npm install --prefix ./client && npm start --prefix ./client && rails db:create && rails db:migrate && rails db:seed && rails s -b 0.0.0.0 -p $PORT
