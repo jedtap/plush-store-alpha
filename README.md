@@ -2,7 +2,7 @@
 
 Hi there! This is a capstone project for The Odin Project curriculum.
 
-Check out the demo here! 👉 https://youtu.be/txnBPMf-keI
+Check out the live application here! 👉 https://rails-production-7bbb.up.railway.app/
 
 ## What makes this capstone project unique?
 
@@ -11,7 +11,3 @@ Check out the demo here! 👉 https://youtu.be/txnBPMf-keI
 - Has a developer's dairy located at `Documents > Dairy.txt`
 - With sample Project Management (PM) documents found in the `Documents` folder
 - Editable PM documents are found in the `Documents > Editable` folder
-
-## Want to test it live?
-
-Send me an email and I am happy to have this application up and running.
