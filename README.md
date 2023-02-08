@@ -2,7 +2,7 @@
 
 Hi there! This is a capstone project for The Odin Project curriculum.
 
-Check out the live application here! 👉 https://rails-production-7bbb.up.railway.app/
+Check out the live application here! 👉 https://rails-production-1951.up.railway.app/
 
 ## What makes this capstone project unique?
 
